@@ -10,5 +10,11 @@ let getComputerChoice = function (number) {
     }
 }
 
-console.log(raNum);
+// console.log(raNum);
 // console.log(getComputerChoice());
+
+let getHumanChoice = function() {
+    return prompt("So, what's it gonna be?").toLowerCase();
+}
+
+// console.log(getHumanChoice());
