@@ -52,9 +52,9 @@ function playGame() {
     playRound(getHumanChoice(), getComputerChoice(raNum()));    
 
     if (humanScore > computerScore) {
-        console.log(`The Score is: ${humanScore}:${computerScore}. You win the game!`)
+        console.log(`The Score is: ${humanScore}:${computerScore} in your favour. You win the game!`)
     } else if (humanScore < computerScore) {
-        console.log(`The Score is: ${humanScore}:${computerScore}. You lose :(`)
+        console.log(`The Score is: ${humanScore}:${computerScore} in computer's favour. You lose :(`)
     } else {
         console.log(`The Score is: ${humanScore}:${computerScore}. It's a draw!`)
     }
