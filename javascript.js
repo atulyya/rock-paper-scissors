@@ -29,12 +29,16 @@ function playGame() {
     function playRound(humanChoice, computerChoice) {
         if (humanChoice == computerChoice) {
             console.log(`You both chose ${humanChoice}! It's a draw.`)
-        } else if (humanChoice == "rock" && computerChoice == "scissors" || humanChoice == "paper" && computerChoice == "rock" || humanChoice == "scissors" && computerChoice == "paper") {
+        } else if (humanChoice == "rock" && computerChoice == "scissors" ||
+            humanChoice == "paper" && computerChoice == "rock" ||
+            humanChoice == "scissors" && computerChoice == "paper") {
             console.log(`Computer chose ${computerChoice}. You Win!`);
             humanScore += 1;
             console.log(`Your Score: ${humanScore}`);
             console.log(`Computer Score: ${computerScore}`);
-        } else if (humanChoice == "scissors" && computerChoice == "rock" || humanChoice == "rock" && computerChoice == "paper" || humanChoice == "paper" && computerChoice == "scissor") {
+        } else if (humanChoice == "scissors" && computerChoice == "rock" ||
+            humanChoice == "rock" && computerChoice == "paper" ||
+            humanChoice == "paper" && computerChoice == "scissor") {
             console.log(`Computer chose ${computerChoice}. You Lose!`);
             computerScore += 1;
             console.log(`Your Score: ${humanScore}`);
